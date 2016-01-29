@@ -18,5 +18,10 @@
   "homepage": "https://github.com/AlexChesters/ukpd#readme",
   "dependencies": {
     "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-bump": "^0.7.0",
+    "grunt-cli": "*"
   }
 }
