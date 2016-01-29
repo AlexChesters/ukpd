@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AlexChesters/ukpd-node/issues"
   },
-  "homepage": "https://github.com/AlexChesters/ukpd-node#readme"
+  "homepage": "https://github.com/AlexChesters/ukpd-node#readme",
+  "dependencies": {
+    "request": "^2.69.0"
+  }
 }
