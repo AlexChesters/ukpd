@@ -30,7 +30,9 @@ var UKPD = function() {
    * @returns {promise}
    */
   function streetLevel (location) {
-    return makeRequest(`${PATHS.STREET_LEVEL}?lat=${location.lat}&lng=${location.long}`);
+    const lat = location.latitude;
+    const lng = location.longitude;
+    return makeRequest(`${PATHS.STREET_LEVEL}?lat=${lat}&lng=${lng}`);
   };
 
   return {
