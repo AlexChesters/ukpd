@@ -4,6 +4,10 @@ var UKPD = function() {
 
   const baseURL = 'https://data.police.uk/api';
 
+  const PATHS = {
+    STREET_LEVEL: '/crimes-street/all-crime'
+  };
+
   function makeRequest (path) {
     return new Promise(function(resolve, reject) {
       request(`${baseURL}${path}`, function(error, response, body) {
@@ -20,8 +24,17 @@ var UKPD = function() {
     });
   };
 
+  /**
+   * Make a request for street level crimes based on a location.
+   * @param {object} location - An object containing latitude and longitude values.
+   * @returns {promise}
+   */
+  function streetLevel (location) {
+    return makeRequest(`${PATHS.STREET_LEVEL}?lat=${location.lat}&lng=${location.long}`);
+  };
+
   return {
-    streetLevel: function(path) { return makeRequest(path); }
+    streetLevel: streetLevel
   };
 
 };
