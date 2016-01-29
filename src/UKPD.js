@@ -1,7 +1,8 @@
 var UKPD = function() {
 
   return {
-    streetLevel: require('./routes/streetLevel')
+    streetLevel: require('./routes/streetLevel'),
+    stopAndSearch: require('./routes/stopAndSearch')
   };
 
 };
