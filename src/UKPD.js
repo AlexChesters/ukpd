@@ -25,3 +25,5 @@ var UKPD = function() {
   };
 
 };
+
+module.exports = new UKPD();
