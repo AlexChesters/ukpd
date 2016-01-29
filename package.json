@@ -1,0 +1,19 @@
+{
+  "name": "ukpd-node",
+  "version": "0.0.1",
+  "description": "a node module to provide an interface to the UK police data API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexChesters/ukpd-node.git"
+  },
+  "author": "Alex Chesters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexChesters/ukpd-node/issues"
+  },
+  "homepage": "https://github.com/AlexChesters/ukpd-node#readme"
+}
