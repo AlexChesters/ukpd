@@ -1,5 +1,3 @@
-var request = require('request');
-
 var UKPD = function() {
 
   return {
