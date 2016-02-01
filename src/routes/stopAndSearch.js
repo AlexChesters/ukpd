@@ -2,12 +2,10 @@ var makeRequest = require('../common/makeRequest');
 var PATHS = require('../common/paths');
 
 /**
- * Make a request for street level crimes based on a location.
- * @param {object} location - An object containing latitude and longitude values.
+ * Make a request for stop and searches based on a force.
+ * @param {string} force - An valid force ID.
  * @returns {promise}
  */
-module.exports = function(location) {
-  const lat = location.latitude;
-  const lng = location.longitude;
-  return makeRequest(`${PATHS.STOP_AND_SEARCH}?lat=${lat}&lng=${lng}`);
+module.exports = function(force) {
+  return makeRequest(`${PATHS.STOP_AND_SEARCH}?force=${force}`);
 };
