@@ -3,7 +3,6 @@
 const nock = require('nock')
 
 const UKPD = require('../../src/UKPD')
-const successData = require('../../stub-data/availability/success')
 
 describe('availability', function () {
   describe('when valid data is returned', function () {
@@ -11,10 +10,10 @@ describe('availability', function () {
       // Intercept request and return the stub data
       nock('https://data.police.uk')
         .get('/api/crimes-street-dates')
-        .reply(200, successData)
+        .reply(200, [{data: 'some-date'}])
       UKPD
         .availability()
-        .then((data) => { expect(data).toEqual(successData); done() })
+        .then((data) => { expect(data).toEqual([{data: 'some-date'}]); done() })
         .catch(() => done.fail(new Error('Promise should not be rejected')))
     })
   })
