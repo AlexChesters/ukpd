@@ -26,6 +26,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jasmine": "^2.4.0",
-    "gulp-standard": "^7.0.1"
+    "gulp-standard": "^7.0.1",
+    "nock": "^8.0.0"
   }
 }
