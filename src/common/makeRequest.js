@@ -11,7 +11,7 @@ module.exports = function (path) {
       try {
         data = JSON.parse(body)
       } catch (e) {
-        return reject(e)
+        return reject('Invalid JSON')
       }
       return resolve(data)
     })
