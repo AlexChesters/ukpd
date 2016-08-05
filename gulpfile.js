@@ -8,7 +8,7 @@ gulp.task('jasmine', function () {
     .pipe(jasmine({verbose: true}))
 })
 
-gulp.task('standard', function () {
+gulp.task('lint', function () {
   return gulp
     .src(['gulpfile.js', 'src/**/*.js', 'test/**/*.js'])
     .pipe(standard())
@@ -17,4 +17,4 @@ gulp.task('standard', function () {
     }))
 })
 
-gulp.task('test', ['jasmine', 'standard'])
+gulp.task('test', ['jasmine', 'lint'])

@@ -8,7 +8,9 @@
     "npm": "3.10.3"
   },
   "scripts": {
-    "test": "gulp test"
+    "lint": "gulp lint",
+    "jasmine": "gulp jasmine",
+    "test": "gulp lint && gulp jasmine"
   },
   "repository": {
     "type": "git",
