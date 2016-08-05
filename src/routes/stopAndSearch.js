@@ -1,5 +1,5 @@
-var makeRequest = require('../common/makeRequest')
-var PATHS = require('../common/paths')
+const makeRequest = require('../common/makeRequest')
+const PATHS = require('../common/paths')
 
 /**
  * Make a request for stop and searches based on a force.

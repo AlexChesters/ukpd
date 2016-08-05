@@ -1,5 +1,5 @@
-var makeRequest = require('../common/makeRequest')
-var PATHS = require('../common/paths')
+const makeRequest = require('../common/makeRequest')
+const PATHS = require('../common/paths')
 
 /**
  * Make a request for street level crimes based on a location.
