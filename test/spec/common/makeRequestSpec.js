@@ -2,30 +2,28 @@
 
 const nock = require('nock')
 
-const UKPD = require('../../src/UKPD')
+const makeRequest = require('../../../src/common/makeRequest')
 
-describe('street level', function () {
+describe('makeRequest', function () {
   describe('when valid data is returned', function () {
     it('should resolve with that data', function (done) {
       // Intercept request and return the stub data
-      nock('https://data.police.uk')
-        .get('/api/crimes-street/all-crime?lat=123&lng=456')
-        .reply(200, [{data: 'some-data'}])
-      UKPD()
-        .streetLevel(123, 456)
-        .then((data) => { expect(data).toEqual([{data: 'some-data'}]); done() })
+      nock('https://data.police.uk/api')
+        .get('/foobar')
+        .reply(200, [{data: 'some-date'}])
+      makeRequest('/foobar')
+        .then((data) => { expect(data).toEqual([{data: 'some-date'}]); done() })
         .catch(() => done.fail(new Error('Promise should not be rejected')))
     })
   })
   describe('when invalid data is returned', function () {
     it('should reject with an error', function (done) {
       // Intercept request and return the stub data
-      nock('https://data.police.uk')
-        .get('/api/crimes-street/all-crime?lat=123&lng=456')
+      nock('https://data.police.uk/api')
+        .get('/foobar')
         .reply(200, '<h1>Welcome to my site</h1>')
-      UKPD()
-        .streetLevel(123, 456)
-        .then(() => done.fail(new Error('Promise should not be resolved')))
+      makeRequest('/foobar')
+        .then(() => done.fail(new Error('Promise should not be rejected')))
         .catch((error) => { expect(error).toEqual('Invalid JSON'); done() })
     })
   })
