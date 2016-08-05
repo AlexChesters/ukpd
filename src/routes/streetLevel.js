@@ -7,6 +7,4 @@ const PATHS = require('../common/paths')
  * @param {number} longitude - A number representing a longitude value.
  * @returns {promise}
  */
-module.exports = (latitude, longitude) => {
-  return makeRequest(`${PATHS.STREET_LEVEL}?lat=${latitude}&lng=${longitude}`)
-}
+module.exports = (latitude, longitude) => makeRequest(`${PATHS.STREET_LEVEL}?lat=${latitude}&lng=${longitude}`)
