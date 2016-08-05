@@ -1,4 +1,6 @@
-var request = require('request')
+'use strict'
+
+const request = require('request')
 
 const baseURL = 'https://data.police.uk/api'
 
@@ -7,7 +9,7 @@ module.exports = function (path) {
     request(`${baseURL}${path}`, function (error, response, body) {
       if (error) { return reject(error) }
       if (response.statusCode !== 200) { return reject({message: `Non-200 status code received: ${response.statusCode}`}) }
-      var data
+      let data
       try {
         data = JSON.parse(body)
       } catch (e) {
