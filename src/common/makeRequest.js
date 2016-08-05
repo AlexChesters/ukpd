@@ -9,13 +9,11 @@ module.exports = (path) => {
     request(`${baseURL}${path}`, (error, response, body) => {
       if (error) { return reject(error) }
       if (response.statusCode !== 200) { return reject({message: `Non-200 status code received: ${response.statusCode}`}) }
-      let data
       try {
-        data = JSON.parse(body)
+        return resolve(JSON.parse(body))
       } catch (e) {
         return reject('Invalid JSON')
       }
-      return resolve(data)
     })
   })
 }
