@@ -40,5 +40,15 @@ describe('makeRequest', function () {
           .catch((error) => { expect(error).toEqual('Non-200 status code received (500)'); done() })
       })
     })
+    describe('and an error is received', function () {
+      it('should reject with an error', function (done) {
+        nock('https://data.police.uk/api')
+          .get('/foobar')
+          .replyWithError({code: 'SOMETHING_BAD', message: 'Something bad happened'})
+        makeRequest('/foobar')
+          .then(() => done.fail(new Error('Promise should not be rejected')))
+          .catch((error) => { expect(error).toEqual({code: 'SOMETHING_BAD', message: 'Something bad happened'}); done() })
+      })
+    })
   })
 })
