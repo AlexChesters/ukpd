@@ -1,7 +1,7 @@
 module.exports = () => {
   return {
-    streetLevel: require('./routes/streetLevel'),
-    stopAndSearch: require('./routes/stopAndSearch'),
-    availability: require('./routes/availability')
+    streetLevel: require('./methods/streetLevel'),
+    stopAndSearch: require('./methods/stopAndSearch'),
+    availability: require('./methods/availability')
   }
 }
