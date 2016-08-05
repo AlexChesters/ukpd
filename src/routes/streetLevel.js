@@ -3,11 +3,10 @@ const PATHS = require('../common/paths')
 
 /**
  * Make a request for street level crimes based on a location.
- * @param {object} location - An object containing latitude and longitude values.
+ * @param {number} latitude - A number representing a latitude value.
+ * @param {number} longitude - A number representing a longitude value.
  * @returns {promise}
  */
-module.exports = (location) => {
-  const lat = location.latitude
-  const lng = location.longitude
-  return makeRequest(`${PATHS.STREET_LEVEL}?lat=${lat}&lng=${lng}`)
+module.exports = (latitude, longitude) => {
+  return makeRequest(`${PATHS.STREET_LEVEL}?lat=${latitude}&lng=${longitude}`)
 }
