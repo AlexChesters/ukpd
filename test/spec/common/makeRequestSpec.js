@@ -30,13 +30,15 @@ describe('makeRequest', function () {
     })
   })
   describe('when an unsuccessful request is made', function () {
-    it('should reject with an error', function (done) {
-      nock('https://data.police.uk/api')
-        .get('/foobar')
-        .reply(500)
-      makeRequest('/foobar')
+    describe('and a non-200 status code is received', function () {
+      it('should reject with an error', function (done) {
+        nock('https://data.police.uk/api')
+          .get('/foobar')
+          .reply(500)
+        makeRequest('/foobar')
           .then(() => done.fail(new Error('Promise should not be rejected')))
           .catch((error) => { expect(error).toEqual('Non-200 status code received (500)'); done() })
+      })
     })
   })
 })
