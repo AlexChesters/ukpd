@@ -11,7 +11,7 @@ describe('street level', function () {
       nock('https://data.police.uk')
         .get('/api/crimes-street/all-crime?lat=123&lng=456')
         .reply(200, [{data: 'some-data'}])
-      UKPD
+      UKPD()
         .streetLevel({latitude: '123', longitude: '456'})
         .then((data) => { expect(data).toEqual([{data: 'some-data'}]); done() })
         .catch(() => done.fail(new Error('Promise should not be rejected')))
@@ -23,7 +23,7 @@ describe('street level', function () {
       nock('https://data.police.uk')
         .get('/api/crimes-street/all-crime?lat=123&lng=456')
         .reply(200, '<h1>Welcome to my site</h1>')
-      UKPD
+      UKPD()
         .streetLevel({latitude: '123', longitude: '456'})
         .then(() => done.fail(new Error('Promise should not be resolved')))
         .catch((error) => { expect(error).toEqual('Invalid JSON'); done() })

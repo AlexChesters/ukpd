@@ -11,7 +11,7 @@ describe('availability', function () {
       nock('https://data.police.uk')
         .get('/api/crimes-street-dates')
         .reply(200, [{data: 'some-date'}])
-      UKPD
+      UKPD()
         .availability()
         .then((data) => { expect(data).toEqual([{data: 'some-date'}]); done() })
         .catch(() => done.fail(new Error('Promise should not be rejected')))
@@ -23,7 +23,7 @@ describe('availability', function () {
       nock('https://data.police.uk')
         .get('/api/crimes-street-dates')
         .reply(200, '<h1>Welcome to my site</h1>')
-      UKPD
+      UKPD()
         .availability()
         .then(() => done.fail(new Error('Promise should not be rejected')))
         .catch((error) => { expect(error).toEqual('Invalid JSON'); done() })

@@ -11,7 +11,7 @@ describe('stop and search', function () {
       nock('https://data.police.uk')
         .get('/api/stops-force?force=some-force&date=some-date')
         .reply(200, [{data: 'some-date'}])
-      UKPD
+      UKPD()
         .stopAndSearch('some-force', 'some-date')
         .then((data) => { expect(data).toEqual([{data: 'some-date'}]); done() })
         .catch(() => done.fail(new Error('Promise should not be rejected')))
@@ -23,7 +23,7 @@ describe('stop and search', function () {
       nock('https://data.police.uk')
         .get('/api/stops-force?force=some-force&date=some-date')
         .reply(200, '<h1>Welcome to my site</h1>')
-      UKPD
+      UKPD()
         .stopAndSearch('some-force', 'some-date')
         .then(() => done.fail(new Error('Promise should not be rejected')))
         .catch((error) => { expect(error).toEqual('Invalid JSON'); done() })
