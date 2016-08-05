@@ -13,7 +13,7 @@
     "test": "gulp lint && gulp jasmine"
   },
   "pre-commit": "lint",
-  "pre-push": "test",
+  "pre-push": "jasmine",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexChesters/ukpd.git"
