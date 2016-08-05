@@ -7,6 +7,4 @@ const PATHS = require('../common/paths')
  * @param {string} date - A date in the format YYYY-MM.
  * @returns {promise}
  */
-module.exports = function (force, date) {
-  return makeRequest(`${PATHS.STOP_AND_SEARCH}?force=${force}&date=${date}`)
-}
+module.exports = (force, date) => makeRequest(`${PATHS.STOP_AND_SEARCH}?force=${force}&date=${date}`)

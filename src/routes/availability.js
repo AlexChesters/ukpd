@@ -5,6 +5,4 @@ const PATHS = require('../common/paths')
  * Make a request for the availability endpoint.
  * @returns {promise}
  */
-module.exports = function () {
-  return makeRequest(`${PATHS.AVAILABILITY}`)
-}
+module.exports = () => makeRequest(`${PATHS.AVAILABILITY}`)

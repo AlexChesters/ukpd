@@ -6,7 +6,7 @@ const PATHS = require('../common/paths')
  * @param {object} location - An object containing latitude and longitude values.
  * @returns {promise}
  */
-module.exports = function (location) {
+module.exports = (location) => {
   const lat = location.latitude
   const lng = location.longitude
   return makeRequest(`${PATHS.STREET_LEVEL}?lat=${lat}&lng=${lng}`)
