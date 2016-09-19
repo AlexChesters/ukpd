@@ -25,13 +25,12 @@
   },
   "homepage": "https://github.com/AlexChesters/ukpd#readme",
   "dependencies": {
-    "gulp-jasmine": "^2.4.1",
     "node-fetch": "^1.6.1",
     "request": "^2.75.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-jasmine": "^2.4.0",
+    "gulp-jasmine": "^2.4.1",
     "gulp-standard": "^7.0.1",
     "nock": "^8.0.0",
     "pre-commit": "^1.1.3",
