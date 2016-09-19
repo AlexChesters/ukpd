@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/AlexChesters/ukpd#readme",
   "dependencies": {
+    "node-fetch": "^1.6.1",
     "request": "^2.69.0"
   },
   "devDependencies": {
