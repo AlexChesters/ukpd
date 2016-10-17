@@ -10,7 +10,9 @@
   "scripts": {
     "lint": "gulp lint",
     "jasmine": "gulp jasmine",
-    "test": "gulp lint && gulp jasmine"
+    "test": "gulp lint && gulp jasmine",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags"
   },
   "pre-commit": "lint",
   "pre-push": "jasmine",
