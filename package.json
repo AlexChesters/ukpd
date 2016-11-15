@@ -16,8 +16,8 @@
   "pre-commit": "lint",
   "pre-push": "test",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexChesters/ukpd.git"
+    "url": "git+https://github.com/AlexChesters/ukpd.git",
+    "type": "git"
   },
   "author": "Alex Chesters",
   "license": "MIT",
