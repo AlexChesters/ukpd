@@ -1,4 +1,4 @@
-const makeRequest = require('../common/makeRequest')
+const makeRequest = require('../common/make_request')
 const PATHS = require('../common/paths')
 
 /**

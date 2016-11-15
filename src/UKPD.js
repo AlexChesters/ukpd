@@ -1,5 +1,5 @@
 module.exports = () => {
   return {
-    streetLevel: require('./methods/streetLevel')
+    streetLevel: require('./methods/street_level')
   }
 }
