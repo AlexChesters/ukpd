@@ -1,5 +1,6 @@
 module.exports = () => {
   return {
-    streetLevel: require('./methods/street_level')
+    streetLevel: require('./methods/street_level'),
+    stopAndSearch: require('./methods/stop_and_search')
   }
 }
