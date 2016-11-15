@@ -3,9 +3,6 @@
 
 A [Node.js](https://nodejs.org/en/) client for the [UK Police API](https://data.police.uk/docs/).
 
-## Requirements
-* `node 6.8.1`
-
 ## Installation
 * `npm install ukpd --save`
 
