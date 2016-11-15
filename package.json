@@ -9,13 +9,12 @@
   },
   "scripts": {
     "lint": "standard",
-    "jasmine": "gulp jasmine",
-    "test": "gulp lint && gulp jasmine",
+    "test": "npm run lint",
     "preversion": "npm test",
     "postversion": "git push --follow-tags"
   },
   "pre-commit": "lint",
-  "pre-push": "jasmine",
+  "pre-push": "test",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexChesters/ukpd.git"
