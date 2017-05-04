@@ -8,4 +8,8 @@ const PATHS = require('../common/paths')
  * @param {string} date - Optional. A date in the format YYYY-MM
  * @returns {promise}
  */
-module.exports = (latitude, longitude, date) => fetchData(`${PATHS.STOP_AND_SEARCH}?lat=${latitude}&lng=${longitude}&date=${date}`)
+module.exports = async (latitude, longitude, date) => {
+  return fetchData(
+    `${PATHS.STOP_AND_SEARCH}?lat=${latitude}&lng=${longitude}&date=${date}`
+  )
+}

@@ -2,6 +2,7 @@
 
 const fetch = require('node-fetch')
 
-module.exports = (path) => {
-  return fetch(`https://data.police.uk/api${path}`).then(res => res.json())
+module.exports = async (path) => {
+  const response = await fetch(`https://data.police.uk/api${path}`)
+  return response.json()
 }
