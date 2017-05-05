@@ -1,8 +1,6 @@
-module.exports = () => {
-  return {
-    streetLevel: require('./methods/street_level'),
-    stopAndSearch: require('./methods/stop_and_search'),
-    forces: require('./methods/forces'),
-    lastUpdated: require('./methods/last_updated')
-  }
+module.exports = {
+  streetLevel: require('./methods/street_level'),
+  stopAndSearch: require('./methods/stop_and_search'),
+  forces: require('./methods/forces'),
+  lastUpdated: require('./methods/last_updated')
 }

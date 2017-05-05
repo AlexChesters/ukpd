@@ -9,7 +9,7 @@ const UKPD = require('../src/UKPD')
 describe('Stop and search', function () {
   this.timeout(5000)
   it('should return the expected data structure', function () {
-    return UKPD().stopAndSearch('52.629729', '-1.131592')
+    return UKPD.stopAndSearch('52.629729', '-1.131592')
       .then((data) => {
         expect(data).to.be.an('array')
         expect(data.length).to.be.above(0)
