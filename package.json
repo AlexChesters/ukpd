@@ -12,7 +12,7 @@
     "unit": "jest",
     "test": "npm run unit && npm run lint",
     "preversion": "npm test",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags && npm publish"
   },
   "repository": {
     "url": "git+https://github.com/AlexChesters/ukpd.git",
