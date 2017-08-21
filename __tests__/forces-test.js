@@ -1,4 +1,4 @@
-/* eslint-env mocha */
+/* eslint-env jest */
 
 const chai = require('chai')
 const expect = chai.expect
@@ -7,9 +7,9 @@ const R = require('ramda')
 const UKPD = require('../src/UKPD')
 
 describe('Forces', function () {
-  this.timeout(5000)
+  jest.DEFAULT_TIMEOUT_INTERVAL = 5000
   describe('for the list of forces', function () {
-    it('should return the expected data structure', function () {
+    test('should return the expected data structure', function () {
       return UKPD.forces()
         .then((data) => {
           expect(data).to.be.an('array')
@@ -19,7 +19,7 @@ describe('Forces', function () {
     })
   })
   describe('for a specific force', function () {
-    it('should return the expected data structure', function () {
+    test('should return the expected data structure', function () {
       return UKPD.forces('cheshire')
         .then((data) => {
           expect(data).to.be.an('object')

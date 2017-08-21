@@ -9,8 +9,8 @@
   },
   "scripts": {
     "lint": "standard",
-    "mocha": "mocha",
-    "test": "npm run lint && npm run mocha",
+    "unit": "jest",
+    "test": "npm run unit && npm run lint",
     "preversion": "npm test",
     "postversion": "git push --follow-tags"
   },
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.1.2",
+    "jest": "^20.0.4",
     "standard": "^10.0.2"
   }
 }
