@@ -1,7 +1,7 @@
 module.exports = {
-  streetLevel: require('./methods/street_level'),
-  stopAndSearch: require('./methods/stop_and_search'),
+  streetLevel: require('./methods/street-level'),
+  stopAndSearch: require('./methods/stop-and-search'),
   forces: require('./methods/forces'),
-  lastUpdated: require('./methods/last_updated'),
+  lastUpdated: require('./methods/last-updated'),
   categories: require('./methods/categories')
 }

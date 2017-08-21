@@ -1,4 +1,4 @@
-const fetchData = require('../common/fetch_data')
+const fetchData = require('../common/fetch-data')
 const PATHS = require('../common/paths')
 
 /**
