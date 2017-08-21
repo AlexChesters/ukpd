@@ -4,7 +4,8 @@
   "description": "a node module to provide an interface to the UK police data API",
   "main": "./src/UKPD.js",
   "engines": {
-    "node": "^7.x.x"
+    "node": "^8.x.x",
+    "npm": "^5.x.x"
   },
   "scripts": {
     "lint": "standard",
