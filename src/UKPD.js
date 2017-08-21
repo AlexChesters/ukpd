@@ -3,5 +3,6 @@ module.exports = {
   stopAndSearch: require('./methods/stop-and-search'),
   forces: require('./methods/forces'),
   lastUpdated: require('./methods/last-updated'),
-  categories: require('./methods/categories')
+  categories: require('./methods/categories'),
+  availability: require('./methods/availability')
 }
