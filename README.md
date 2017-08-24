@@ -1,7 +1,8 @@
 # ukpd
 [![Build Status](https://travis-ci.org/AlexChesters/ukpd.svg?branch=master)](https://travis-ci.org/AlexChesters/ukpd)
 
-A [Node.js](https://nodejs.org/en/) and browser client for the [UK Police API](https://data.police.uk/docs/).
+A client for the [UK Police API](https://data.police.uk/docs/),
+compatabile with [Node.js](https://nodejs.org/en/) and the browser.
 
 ## Installation
 * `npm install ukpd --save`
