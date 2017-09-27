@@ -3,7 +3,7 @@
 const chai = require('chai')
 const expect = chai.expect
 
-const UKPD = require('../build')
+const UKPD = require('../src/UKPD')
 
 describe('Last updated', function () {
   jest.DEFAULT_TIMEOUT_INTERVAL = 5000
