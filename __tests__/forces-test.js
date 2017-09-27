@@ -4,7 +4,7 @@ const chai = require('chai')
 const expect = chai.expect
 const R = require('ramda')
 
-const UKPD = require('../src/UKPD')
+const UKPD = require('../build')
 
 describe('Forces', function () {
   jest.DEFAULT_TIMEOUT_INTERVAL = 5000
