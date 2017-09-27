@@ -2,7 +2,7 @@
   "name": "ukpd",
   "version": "0.24.0",
   "description": "a node module to provide an interface to the UK police data API",
-  "main": "./build/index.js",
+  "main": "./build/UKPD.js",
   "files": [
     "build/"
   ],
@@ -11,11 +11,11 @@
     "npm": "^5.x.x"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "babel src --config .babelrc --out-dir build",
     "lint": "standard src",
     "unit": "jest",
     "test": "npm run unit && npm run lint",
-    "preversion": "npm test",
+    "preversion": "npm test && npm run build",
     "postversion": "git push --follow-tags && npm publish"
   },
   "repository": {
@@ -35,11 +35,9 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "chai": "^3.5.0",
     "jest": "^20.0.4",
-    "standard": "^10.0.2",
-    "webpack": "^3.6.0"
+    "standard": "^10.0.2"
   }
 }
