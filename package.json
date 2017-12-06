@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/AlexChesters/ukpd#readme",
   "dependencies": {
-    "node-fetch": "^1.6.1"
+    "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
