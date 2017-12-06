@@ -1,5 +1,6 @@
 # ukpd
 [![Build Status](https://travis-ci.org/AlexChesters/ukpd.svg?branch=master)](https://travis-ci.org/AlexChesters/ukpd)
+[![npm version](https://badge.fury.io/js/ukpd.svg)](https://badge.fury.io/js/ukpd)
 
 A client for the [UK Police API](https://data.police.uk/docs/),
 compatible with [Node.js](https://nodejs.org/en/) and the browser.
