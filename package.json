@@ -2,7 +2,7 @@
   "name": "ukpd",
   "version": "1.0.0",
   "description": "a node module to provide an interface to the UK police data API",
-  "main": "./build/UKPD.js",
+  "main": "./build/index.js",
   "files": [
     "build/"
   ],

@@ -2,7 +2,7 @@
 
 import * as chai from 'chai'
 
-import UKPD from '../UKPD'
+import UKPD from '..'
 
 const expect = chai.expect
 
