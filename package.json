@@ -11,8 +11,9 @@
     "npm": "^5.x.x"
   },
   "scripts": {
-    "build": "babel src --config .babelrc --out-dir build",
-    "lint": "standard src",
+    "watch": "tsc --project tsconfig.json -w",
+    "build": "tsc --project tsconfig.json",
+    "lint": "tslint --project tsconfig.json --config tslint.json src/**/*.ts __tests__/**/*.ts",
     "unit": "jest",
     "test": "concurrently 'npm run unit' 'npm run lint'",
     "preversion": "npm test && npm run build",
@@ -32,12 +33,16 @@
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
+    "@types/chai": "^4.1.7",
+    "@types/isomorphic-fetch": "0.0.34",
+    "@types/jest": "^23.3.12",
+    "@types/ramda": "^0.25.46",
     "chai": "^3.5.0",
     "concurrently": "^4.1.0",
     "jest": "^20.0.4",
     "ramda": "^0.22.1",
-    "standard": "^12.0.1"
+    "tslint": "^5.12.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.1.2"
   }
 }

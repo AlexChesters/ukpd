@@ -1,5 +1,5 @@
-const fetchData = require('../common/fetch-data')
-const PATHS = require('../common/paths')
+import fetchData from '../common/fetch-data'
+import PATHS from '../common/paths'
 
 /**
  * Make a request for street level crimes based on a location.
@@ -8,7 +8,7 @@ const PATHS = require('../common/paths')
  * @param {string} date - Optional. A date in the format YYYY-MM
  * @returns {promise}
  */
-module.exports = async (latitude, longitude, date) => {
+export default async (latitude: number, longitude: number, date: string) => {
   return fetchData(
     `${PATHS.STREET_LEVEL}?lat=${latitude}&lng=${longitude}&date=${date}`
   )
