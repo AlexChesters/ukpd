@@ -26,7 +26,6 @@
     "resolveJsonModule": true,
   },
   "exclude": [
-    "build/src",
-    "build/__tests__"
+    "build"
   ]
 }

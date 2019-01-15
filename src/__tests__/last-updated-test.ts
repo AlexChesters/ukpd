@@ -1,12 +1,13 @@
 /* eslint-env jest */
 
-const chai = require('chai')
+import * as chai from 'chai'
+
+import UKPD from '../UKPD'
+
 const expect = chai.expect
 
-const UKPD = require('../src/UKPD')
-
 describe('Last updated', function () {
-  jest.DEFAULT_TIMEOUT_INTERVAL = 5000
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   test('should return the date in ISO 8601 format', function () {
     return UKPD.lastUpdated()
       .then((data) => {

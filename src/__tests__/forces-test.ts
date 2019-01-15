@@ -1,13 +1,14 @@
 /* eslint-env jest */
 
-const chai = require('chai')
-const expect = chai.expect
-const R = require('ramda')
+import * as chai from 'chai'
+import * as R from 'ramda'
 
-const UKPD = require('../src/UKPD')
+import UKPD from '../UKPD'
+
+const expect = chai.expect
 
 describe('Forces', function () {
-  jest.DEFAULT_TIMEOUT_INTERVAL = 5000
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   describe('for the list of forces', function () {
     test('should return the expected data structure', function () {
       return UKPD.forces()

@@ -1,13 +1,14 @@
 /* eslint-env jest */
 
-const chai = require('chai')
-const expect = chai.expect
-const R = require('ramda')
+import * as chai from 'chai'
+import * as R from 'ramda'
 
-const UKPD = require('../src/UKPD')
+import UKPD from '../UKPD'
+
+const expect = chai.expect
 
 describe('Categories', function () {
-  jest.DEFAULT_TIMEOUT_INTERVAL = 5000
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   test('should return a list of categories', function () {
     return UKPD.categories()
       .then((data) => {

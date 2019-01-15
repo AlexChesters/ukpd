@@ -12,9 +12,10 @@
   },
   "scripts": {
     "watch": "tsc --project tsconfig.json -w",
+    "prebuild": "rm -rf build/",
     "build": "tsc --project tsconfig.json",
     "lint": "tslint --project tsconfig.json --config tslint.json src/**/*.ts __tests__/**/*.ts",
-    "unit": "jest",
+    "unit": "jest build/",
     "test": "concurrently 'npm run unit' 'npm run lint'",
     "preversion": "npm test && npm run build",
     "postversion": "git push --follow-tags && npm publish"
