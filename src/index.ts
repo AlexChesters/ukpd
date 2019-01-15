@@ -5,7 +5,7 @@ import lastUpdated from './methods/last-updated'
 import stopAndSearch from './methods/stop-and-search'
 import streetLevel from './methods/street-level'
 
-export default {
+export {
   availability,
   categories,
   forces,

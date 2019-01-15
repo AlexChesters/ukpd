@@ -3,7 +3,7 @@
 import * as chai from 'chai'
 import * as R from 'ramda'
 
-import UKPD from '..'
+import * as UKPD from '..'
 
 const expect = chai.expect
 
