@@ -6,6 +6,6 @@ import PATHS from '../common/paths'
  * @param {string} force - Optional. A valid force identifier
  * @returns {promise}
  */
-export default async (force = null) => {
+export default async (force?: string) => {
   return fetchData(`${PATHS.FORCES}${force ? `/${force}` : ''}`)
 }

@@ -8,7 +8,7 @@ import PATHS from '../common/paths'
  * @param {string} date - Optional. A date in the format YYYY-MM
  * @returns {promise}
  */
-export default async (latitude: number, longitude: number, date: string) => {
+export default async (latitude: number, longitude: number, date?: string) => {
   return fetchData(
     `${PATHS.STREET_LEVEL}?lat=${latitude}&lng=${longitude}&date=${date}`
   )
