@@ -3,7 +3,7 @@
   "version": "1.1.1",
   "description": "a node module to provide an interface to the UK police data API",
   "main": "./build/index.js",
-  "types": "./src/types.d.ts",
+  "types": "./build/index.d.ts",
   "files": [
     "build/"
   ],
