@@ -5,11 +5,15 @@ import lastUpdated from './methods/last-updated'
 import stopAndSearch from './methods/stop-and-search'
 import streetLevel from './methods/street-level'
 
+import { ICrime } from './interfaces'
+
 export {
   availability,
   categories,
   forces,
   lastUpdated,
   stopAndSearch,
-  streetLevel
+  streetLevel,
+  // Types
+  ICrime
 }

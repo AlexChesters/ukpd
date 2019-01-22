@@ -1,5 +1,3 @@
-'use strict'
-
 import * as fetch from 'isomorphic-fetch'
 
 export default async (path: string) => {
