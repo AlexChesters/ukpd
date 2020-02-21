@@ -8,3 +8,8 @@ export interface ICrime {
     }
   }
 }
+
+export interface IAvailability {
+  date: string,
+  'stop-and-search': string[]
+}
