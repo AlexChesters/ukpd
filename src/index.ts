@@ -5,7 +5,7 @@ import lastUpdated from './methods/last-updated'
 import stopAndSearch from './methods/stop-and-search'
 import streetLevel from './methods/street-level'
 
-import { ICrime } from './interfaces'
+import { ICrime, IAvailability } from './interfaces'
 
 export {
   availability,
@@ -15,5 +15,6 @@ export {
   stopAndSearch,
   streetLevel,
   // Types
-  ICrime
+  ICrime,
+  IAvailability
 }

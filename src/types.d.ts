@@ -1,6 +1,6 @@
-import { ICrime } from './interfaces'
+import { ICrime, IAvailability } from './interfaces'
 
-export function availability(): object[]
+export function availability(): IAvailability[]
 export function categories(): object[]
 export function forces(force?: string): object[]
 export function lastUpdated(): object[]
