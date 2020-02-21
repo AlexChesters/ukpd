@@ -1,5 +1,5 @@
 export interface ICrime {
-  category: string
+  category: ICategory
   location: {
     latitude: string
     longitude: string
@@ -12,4 +12,9 @@ export interface ICrime {
 export interface IAvailability {
   date: string,
   'stop-and-search': string[]
+}
+
+export interface ICategory {
+  url: string,
+  name: string
 }

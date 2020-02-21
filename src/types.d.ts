@@ -1,7 +1,7 @@
-import { ICrime, IAvailability } from './interfaces'
+import { ICrime, IAvailability, ICategory } from './interfaces'
 
 export function availability(): IAvailability[]
-export function categories(): object[]
+export function categories(): ICategory[]
 export function forces(force?: string): object[]
 export function lastUpdated(): object[]
 export function stopAndSearch(latitude: number, longitude: number, date?: string): object[]
