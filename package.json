@@ -14,7 +14,7 @@
   "scripts": {
     "watch": "tsc --project tsconfig.json -w",
     "prebuild": "rm -rf build/",
-    "build": "sh scripts/build.sh",
+    "build": "tsc --project tsconfig.json",
     "lint": "tslint --project tsconfig.json --config tslint.json src/**/*.ts __tests__/**/*.ts",
     "unit": "jest --config jest.config.js build/",
     "test": "concurrently 'npm run unit' 'npm run lint'",
@@ -45,7 +45,6 @@
     "ramda": "^0.27.0",
     "tslint": "^6.0.0",
     "tslint-config-standard": "^9.0.0",
-    "typescript": "^3.7.5",
-    "typescript-json-schema": "^0.42.0"
+    "typescript": "^3.7.5"
   }
 }

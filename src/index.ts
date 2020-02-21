@@ -7,8 +7,6 @@ import streetLevel from './methods/street-level'
 
 import { ICrime, IAvailability, ICategory } from './interfaces'
 
-const schemaPath = './schema.json'
-
 export {
   availability,
   categories,
@@ -19,7 +17,5 @@ export {
   // Types
   ICrime,
   IAvailability,
-  ICategory,
-  // Schema,
-  schemaPath
+  ICategory
 }
