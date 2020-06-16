@@ -1,5 +1,5 @@
-import fetchData from '../common/fetch-data'
-import PATHS from '../common/paths'
+import fetchData from '../utils/fetch-data'
+import PATHS from '../utils/paths'
 import { ICategory } from '../interfaces'
 
 /**
