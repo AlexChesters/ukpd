@@ -11,7 +11,8 @@ const expect = chai.expect
 
 describe('Street level', function () {
   jasmine.DEFAULT_TIMEOUT_INTERVAL = 7500
-  test('should return the expected data structure', function () {
+
+  it('should return the expected data structure', function () {
     return UKPD.streetLevel(52.629729, -1.131592)
       .then((data: ICrime[]) => {
         expect(data).to.be.an('array')
