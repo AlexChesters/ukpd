@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 export interface ICrime {
   category: ICategory
   location: {
@@ -15,6 +16,7 @@ export interface ICrime {
   location_subtype: string,
   month: string
 }
+// eslint-enable camelcase */
 
 export interface IAvailability {
   date: string,
