@@ -3,6 +3,6 @@ export enum Endpoint {
   CATEGORIES = '/crime-categories',
   FORCES = '/forces',
   LAST_UPDATED = '/crime-last-updated',
-  STOP_AND_SEARCH = '/stops-street',
+  STOP_AND_SEARCH = '/stops-force',
   STREET_LEVEL = '/crimes-street/all-crime'
 }

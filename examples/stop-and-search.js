@@ -6,7 +6,7 @@
 const UKPD = require('../build/src')
 
 async function main () {
-  const results = await UKPD.stopAndSearch('52.629729', '-1.131592')
+  const results = await UKPD.stopAndSearch('cheshire')
 
   console.log('there were', results.length, 'stop and searches')
 }
