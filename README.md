@@ -20,3 +20,9 @@ try {
 
 You can find more information by looking at any of the available
 [methods](./src/methods), or the [examples](./examples).
+
+## Acknowledgements
+All data is provided by
+[data.police.uk](https://data.police.uk/about/)
+under the
+[Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
