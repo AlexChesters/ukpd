@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
-export interface ICrime {
-  category: ICategory
+export interface Crime {
+  category: Category
   location: {
     latitude: string
     longitude: string
@@ -18,12 +18,12 @@ export interface ICrime {
 }
 // eslint-enable camelcase */
 
-export interface IAvailability {
+export interface Availability {
   date: string,
   'stop-and-search': string[]
 }
 
-export interface ICategory {
+export interface Category {
   url: string,
   name: string
 }
