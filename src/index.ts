@@ -35,6 +35,11 @@ interface Category {
   name: string
 }
 
+interface Force {
+  id: string,
+  name: string
+}
+
 export {
   availability,
   categories,
@@ -45,5 +50,6 @@ export {
   // interfaces
   Crime,
   Availability,
-  Category
+  Category,
+  Force
 }

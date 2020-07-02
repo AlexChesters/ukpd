@@ -1,5 +1,6 @@
 import fetchData from '../utils/fetch-data'
 import { Endpoint } from '../utils/endpoints'
+import { Force } from '../'
 
 /**
  * Make a request for either the list of forces or a specific force.
@@ -8,6 +9,6 @@ import { Endpoint } from '../utils/endpoints'
  */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async (force?: string): Promise<any> => {
+export default async (force?: string): Promise<Force[]> => {
   return fetchData(`${Endpoint.FORCES}${force ? `/${force}` : ''}`)
 }
