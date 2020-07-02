@@ -1,8 +1,10 @@
 import fetchData from '../utils/fetch-data'
-import PATHS from '../utils/paths'
+import { Endpoint } from '../utils/endpoints'
 
 /**
  * Make a request for the date the underlying data was last updated
  * @returns {promise}
  */
-export default async () => fetchData(PATHS.LAST_UPDATED)
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async (): Promise<any> => fetchData(Endpoint.LAST_UPDATED)

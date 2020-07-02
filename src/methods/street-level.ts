@@ -1,5 +1,5 @@
 import fetchData from '../utils/fetch-data'
-import PATHS from '../utils/paths'
+import { Endpoint } from '../utils/endpoints'
 import { Crime } from '../'
 
 /**
@@ -11,6 +11,6 @@ import { Crime } from '../'
  */
 export default async (latitude: number, longitude: number, date?: string): Promise<Crime[]> => {
   return fetchData(
-    `${PATHS.STREET_LEVEL}?lat=${latitude}&lng=${longitude}&date=${date}`
+    `${Endpoint.STREET_LEVEL}?lat=${latitude}&lng=${longitude}&date=${date}`
   )
 }
