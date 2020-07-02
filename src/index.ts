@@ -56,7 +56,7 @@ interface StopAndSearch {
 
 interface Availability {
   date: string,
-  'stop-and-search': string[]
+  'stop-and-search': ForceIdentifier[]
 }
 
 interface Category {
@@ -64,8 +64,10 @@ interface Category {
   name: string
 }
 
+type ForceIdentifier = string
+
 interface Force {
-  id: string,
+  id: ForceIdentifier,
   name: string
 }
 
