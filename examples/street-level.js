@@ -6,9 +6,9 @@
 const UKPD = require('../build/src')
 
 async function main () {
-  const result = await UKPD.lastUpdated()
+  const results = await UKPD.streetLevel('52.629729', '-1.131592')
 
-  console.log('data was last updated on', result.date)
+  console.log('there were', results.length, 'crimes')
 }
 
 main()
