@@ -5,7 +5,7 @@ import * as R from 'ramda'
 
 import * as UKPD from '../src'
 
-import { Force } from '../'
+import { Force } from '../src'
 
 const expect = chai.expect
 
