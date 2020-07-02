@@ -18,4 +18,5 @@ try {
 }
 ```
 
-You can find more information by looking at any of the available [methods](https://github.com/AlexChesters/ukpd/tree/master/src/methods).
+You can find more information by looking at any of the available
+[methods](./src/methods), or the [examples](./examples).
