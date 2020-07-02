@@ -1,7 +1,6 @@
 import * as fetch from 'isomorphic-fetch'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async (endpoint: string): Promise<any> => {
+export default async (endpoint: string): Promise<Record<string, unknown> | Record<string, unknown>[]> => {
   const response = await fetch(`https://data.police.uk/api${endpoint}`)
   return response.json()
 }
