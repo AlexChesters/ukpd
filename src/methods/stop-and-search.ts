@@ -1,5 +1,6 @@
 import fetchData from '../utils/fetch-data'
 import { Endpoint } from '../utils/endpoints'
+import { StopAndSearch } from '../'
 
 /**
  * Make a request for stop and searches based on a location.
@@ -10,7 +11,7 @@ import { Endpoint } from '../utils/endpoints'
  */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async (latitude: number, longitude: number, date?: string): Promise<any> => {
+export default async (latitude: number, longitude: number, date?: string): Promise<StopAndSearch[]> => {
   return fetchData(
     `${Endpoint.STOP_AND_SEARCH}?lat=${latitude}&lng=${longitude}&date=${date}`
   )

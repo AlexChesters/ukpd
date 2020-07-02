@@ -23,6 +23,35 @@ interface Crime {
   location_subtype: string,
   month: string
 }
+
+interface StopAndSearch {
+  age_range: string,
+  outcome: string,
+  involved_person: boolean,
+  self_defined_ethnicity: string,
+  gender: string,
+  legislation: string,
+  outcome_linked_to_object_of_search: boolean,
+  datetime: string,
+  removal_of_more_than_outer_clothing: boolean,
+  outcome_object: {
+    id: string,
+    name: string
+  },
+  location: {
+    latitude: string,
+    street: {
+      id: number,
+      name: string
+    },
+    longitude: string
+  },
+  operation: boolean,
+  officer_defined_ethnicity: string,
+  type: string,
+  operation_name: string,
+  object_of_search: string
+}
 // eslint-enable camelcase */
 
 interface Availability {
@@ -49,6 +78,7 @@ export {
   streetLevel,
   // interfaces
   Crime,
+  StopAndSearch,
   Availability,
   Category,
   Force
