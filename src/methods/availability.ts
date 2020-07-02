@@ -1,6 +1,6 @@
 import fetchData from '../utils/fetch-data'
 import PATHS from '../utils/paths'
-import { Availability } from '../interfaces'
+import { Availability } from '../'
 
 /**
  * Make a request for the available data

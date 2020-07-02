@@ -1,6 +1,6 @@
 import fetchData from '../utils/fetch-data'
 import PATHS from '../utils/paths'
-import { Crime } from '../interfaces'
+import { Crime } from '../'
 
 /**
  * Make a request for street level crimes based on a location.

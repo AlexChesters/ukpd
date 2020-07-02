@@ -1,6 +1,6 @@
 import fetchData from '../utils/fetch-data'
 import PATHS from '../utils/paths'
-import { Category } from '../interfaces'
+import { Category } from '../'
 
 /**
  * Make a request for the available categories

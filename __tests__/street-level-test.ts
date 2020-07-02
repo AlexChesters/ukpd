@@ -5,7 +5,7 @@ import * as R from 'ramda'
 
 import * as UKPD from '../src'
 
-import { Crime } from '../src/interfaces'
+import { Crime } from '../src'
 
 const expect = chai.expect
 
