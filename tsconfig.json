@@ -6,7 +6,8 @@
     "outDir": "build"
   },
   "include": [
-    "src"
+    "src",
+    "__tests__"
   ],
   "exclude": [
     "build"
