@@ -5,6 +5,8 @@ import * as R from 'ramda'
 
 import * as UKPD from '../src'
 
+import { Force } from '../'
+
 const expect = chai.expect
 
 describe('Forces', function () {
@@ -12,7 +14,7 @@ describe('Forces', function () {
   describe('for the list of forces', function () {
     test('should return the expected data structure', function () {
       return UKPD.forces()
-        .then((data) => {
+        .then((data: Force[]) => {
           expect(data).to.be.an('array')
           expect(data.length).to.be.above(0)
           R.forEach((item) => expect(item).to.be.an('object'), data)
@@ -22,7 +24,7 @@ describe('Forces', function () {
   describe('for a specific force', function () {
     test('should return the expected data structure', function () {
       return UKPD.forces('cheshire')
-        .then((data) => {
+        .then((data: Force) => {
           expect(data).to.be.an('object')
         })
     })

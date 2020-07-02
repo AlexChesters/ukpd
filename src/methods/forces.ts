@@ -9,6 +9,6 @@ import { Force } from '../'
  */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async (force?: string): Promise<Force[]> => {
+export default async (force?: string): Promise<Force[] | Force> => {
   return fetchData(`${Endpoint.FORCES}${force ? `/${force}` : ''}`)
 }

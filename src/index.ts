@@ -69,6 +69,10 @@ interface Force {
   name: string
 }
 
+interface LastUpdated {
+  date: string
+}
+
 export {
   availability,
   categories,
@@ -81,5 +85,6 @@ export {
   StopAndSearch,
   Availability,
   Category,
-  Force
+  Force,
+  LastUpdated
 }
