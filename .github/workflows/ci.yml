@@ -26,6 +26,3 @@ jobs:
         run: npm run build
       - name: run tests
         run: npm test
-      - name: run examples
-        run: |
-          node examples/last-updated.js
