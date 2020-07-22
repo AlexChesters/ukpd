@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.1] - 2020-07-22
+* Fixes two security vulnerabilities
+    * [lodash (#1523)](https://www.npmjs.com/advisories/1523)
+    * [minimist (#1179)](https://www.npmjs.com/advisories/1179)
+
 ## [3.0.0] - 2020-07-02
 * Updates `.stopAndSearch` function to take a police force identifier, rather than
 latitude and longitude.
