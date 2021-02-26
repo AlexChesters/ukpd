@@ -5,6 +5,27 @@ import lastUpdated from './methods/last-updated'
 import stopAndSearch from './methods/stop-and-search'
 import streetLevel from './methods/street-level'
 
+type ForceIdentifier = string
+
+interface Availability {
+  date: string,
+  'stop-and-search': ForceIdentifier[]
+}
+
+interface Category {
+  url: string,
+  name: string
+}
+
+interface Force {
+  id: ForceIdentifier,
+  name: string
+}
+
+interface LastUpdated {
+  date: string
+}
+
 /* eslint-disable camelcase */
 interface Crime {
   category: Category
@@ -53,27 +74,6 @@ interface StopAndSearch {
   object_of_search: string
 }
 // eslint-enable camelcase */
-
-interface Availability {
-  date: string,
-  'stop-and-search': ForceIdentifier[]
-}
-
-interface Category {
-  url: string,
-  name: string
-}
-
-type ForceIdentifier = string
-
-interface Force {
-  id: ForceIdentifier,
-  name: string
-}
-
-interface LastUpdated {
-  date: string
-}
 
 export {
   availability,
