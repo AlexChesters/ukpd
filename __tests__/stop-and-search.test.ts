@@ -10,7 +10,6 @@ import { StopAndSearch } from '../src'
 const expect = chai.expect
 
 describe('Stop and search', function () {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   test('should return the expected data structure', function () {
     return UKPD.stopAndSearch('cheshire')
       .then((data: StopAndSearch[]) => {

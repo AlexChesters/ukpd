@@ -10,7 +10,6 @@ import { Category } from '../src'
 const expect = chai.expect
 
 describe('Categories', function () {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   test('should return a list of categories', function () {
     return UKPD.categories()
       .then((data: Category[]) => {

@@ -10,7 +10,6 @@ import { Force } from '../src'
 const expect = chai.expect
 
 describe('Forces', function () {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   describe('for the list of forces', function () {
     test('should return the expected data structure', function () {
       return UKPD.forces()

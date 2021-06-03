@@ -9,7 +9,6 @@ import { LastUpdated } from '../src'
 const expect = chai.expect
 
 describe('Last updated', function () {
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000
   test('should return the date in ISO 8601 format', function () {
     return UKPD.lastUpdated()
       .then((data: LastUpdated) => {
