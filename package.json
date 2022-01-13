@@ -15,7 +15,7 @@
     "watch": "tsc --project tsconfig.json -w",
     "prebuild": "rm -rf build/",
     "build": "tsc --project tsconfig.json",
-    "unit": "jest --config jest.config.js __tests__/",
+    "unit": "jest --config jest.config.js",
     "lint": "eslint .",
     "examples": "sh ci/scripts/run-all-examples.sh",
     "test": "npm run unit && npm run lint && npm run examples",

@@ -3,9 +3,9 @@
 import * as chai from 'chai'
 import * as R from 'ramda'
 
-import * as UKPD from '../src'
+import * as UKPD from '../'
 
-import { StopAndSearch } from '../src'
+import { StopAndSearch } from '../'
 
 const expect = chai.expect
 
