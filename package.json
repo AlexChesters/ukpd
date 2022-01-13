@@ -8,8 +8,8 @@
     "build/"
   ],
   "engines": {
-    "node": "^12.x.x",
-    "npm": "^6.x.x"
+    "node": ">=12",
+    "npm": ">=6"
   },
   "scripts": {
     "watch": "tsc --project tsconfig.json -w",
