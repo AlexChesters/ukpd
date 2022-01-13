@@ -6,7 +6,7 @@
 const UKPD = require('../build/src')
 
 async function main () {
-  const results = await UKPD.streetLevel('52.629729', '-1.131592')
+  const results = await UKPD.streetLevel(52.629729, -1.131592)
 
   console.log('there were', results.length, 'crimes')
 }

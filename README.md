@@ -11,7 +11,7 @@ A Node.js client for the [UK Police API](https://data.police.uk/docs/).
 const UKPD = require('ukpd')
 
 try {
-  const data = await UKPD.streetLevel('52.629729', '-1.131592')
+  const data = await UKPD.streetLevel(52.629729, -1.131592)
   console.log('data!', data)
 } catch (err) {
   console.error('An error occurred', err)
