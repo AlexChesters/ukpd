@@ -14,7 +14,6 @@ describe('Stop and search', function () {
     return UKPD.stopAndSearch('cheshire')
       .then((data: StopAndSearch[]) => {
         expect(data).to.be.an('array')
-        expect(data.length).to.be.above(0)
         R.forEach((item) => expect(item).to.be.an('object'), data)
       })
   })
