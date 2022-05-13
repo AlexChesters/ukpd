@@ -1,6 +1,6 @@
 {
   "name": "ukpd",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "a node module to provide an interface to the UK police data API",
   "main": "./build/src/index.js",
   "types": "./build/src/index.d.ts",
