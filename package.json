@@ -18,6 +18,7 @@
     "unit": "jest --config jest.config.js",
     "lint": "eslint .",
     "examples": "sh ci/scripts/run-all-examples.sh",
+    "pretest": "npm run build",
     "test": "npm run unit && npm run lint && npm run examples",
     "preversion": "npm test && npm run build",
     "postversion": "git push --follow-tags && npm publish"
