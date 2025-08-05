@@ -5,6 +5,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [7.0.0] - 2025-08-05
+* Removes internal use of `isomorphic-fetch`
+    * This means that this library must be run in an environment where `fetch` is available
+* Updates internal linting settings
+* Updates dependencies
+
 ## [6.0.0] - 2025-04-17
 * Removes support for Node.js 16.x
 * Removes support for Node.js 18.x
