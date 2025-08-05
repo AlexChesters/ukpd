@@ -1,12 +1,12 @@
 // obtain a reference to the module
 // when using the module in your project, this line would be
 // const traffic = require('ukpd')
-const UKPD = require('../build')
+const UKPD = require('../../build')
 
 async function main () {
-  const result = await UKPD.lastUpdated()
+  const results = await UKPD.stopAndSearch('cheshire')
 
-  console.log('data was last updated on', result.date)
+  console.log('there were', results.length, 'stop and searches')
 }
 
 main()
