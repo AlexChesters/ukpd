@@ -26,7 +26,7 @@ interface LastUpdated {
   date: string
 }
 
-/* eslint-disable camelcase */
+ 
 interface Crime {
   category: Category
   location: {
