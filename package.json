@@ -33,9 +33,7 @@
     "url": "https://github.com/AlexChesters/ukpd/issues"
   },
   "homepage": "https://github.com/AlexChesters/ukpd#readme",
-  "dependencies": {
-    "isomorphic-fetch": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/chai": "^4.3.6",
     "@types/isomorphic-fetch": "0.0.37",
