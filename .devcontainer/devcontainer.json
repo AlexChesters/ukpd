@@ -1,0 +1,28 @@
+{
+	"name": "UKPD",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		"--name",
+		"vscode-devcontainer_ukpd",
+		// https://github.com/aws/aws-cli/issues/9148
+		"--network=host"
+	],
+	"mounts": [
+		"type=bind,source=${localEnv:HOME}/.aws/personal.config,target=/root/.aws/config",
+		"type=bind,source=${localEnv:HOME}/.aws/sso,target=/root/.aws/sso"
+	],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"extensions.verifySignature": false,
+				"terminal.integrated.enablePersistentSessions": false
+			},
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	}
+}
