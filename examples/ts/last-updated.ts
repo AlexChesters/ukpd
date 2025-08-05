@@ -1,7 +1,7 @@
 // obtain a reference to the module
 // when using the module in your project, this line would be
-// const UKPD = require('ukpd')
-const UKPD = require('../../build')
+// import * as UKPD from 'ukpd'
+import * as UKPD from '../../build'
 
 async function main () {
   const result = await UKPD.lastUpdated()

@@ -8,3 +8,12 @@ for example in examples/js/*; do
   node $example
   echo "--------------------"
 done
+
+echo "running all TS examples"
+echo "--------------------"
+
+for example in examples/ts/*; do
+  echo "running $(basename $example .ts)"
+  npx ts-node $example
+  echo "--------------------"
+done
