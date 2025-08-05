@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [7.0.1] - 2025-08-05
+* Fix incorrect `main` and `types` field in `package.json`
+* Adds typescript examples
+
 ## [7.0.0] - 2025-08-05
 * Removes internal use of `isomorphic-fetch`
     * This means that this library must be run in an environment where `fetch` is available
