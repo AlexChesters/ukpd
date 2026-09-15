@@ -1,6 +1,6 @@
 import availability from './methods/availability'
 import categories from './methods/categories'
-import customArea from './methods/custom-area'
+import streetLevelCustomArea from './methods/street-level-custom-area'
 import forces from './methods/forces'
 import lastUpdated from './methods/last-updated'
 import stopAndSearch from './methods/stop-and-search'
@@ -79,7 +79,7 @@ interface StopAndSearch {
 export {
   availability,
   categories,
-  customArea,
+  streetLevelCustomArea,
   forces,
   lastUpdated,
   stopAndSearch,

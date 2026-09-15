@@ -5,7 +5,7 @@ import * as UKPD from '../../build'
 
 async function main () {
   const poly = '52.629729,-1.131592:52.630729,-1.131592:52.630729,-1.130592:52.629729,-1.130592'
-  const results = await UKPD.customArea(poly)
+  const results = await UKPD.streetLevelCustomArea(poly)
 
   console.log('there were', results.length, 'crimes')
 }

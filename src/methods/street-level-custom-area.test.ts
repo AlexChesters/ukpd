@@ -7,9 +7,9 @@ import { Crime } from '../'
 
 const expect = chai.expect
 
-describe('Custom area', function () {
+describe('Street-level custom area', function () {
   test('should return the expected data structure', function () {
-    return UKPD.customArea(
+    return UKPD.streetLevelCustomArea(
       '52.629729,-1.131592:52.630729,-1.131592:52.630729,-1.130592:52.629729,-1.130592'
     )
       .then((data: Crime[]) => {

@@ -18,12 +18,12 @@ try {
 }
 ```
 
-To retrieve crimes within a custom area, pass a polygon as colon-separated
-latitude/longitude pairs to `customArea`:
+To retrieve crimes within a street-level custom area, pass a polygon as
+colon-separated latitude/longitude pairs to `streetLevelCustomArea`:
 
 ```javascript
 const poly = '52.629729,-1.131592:52.630729,-1.131592:52.630729,-1.130592:52.629729,-1.130592'
-const data = await UKPD.customArea(poly)
+const data = await UKPD.streetLevelCustomArea(poly)
 ```
 
 Rate-limited requests are retried up to three times after waiting for the

@@ -6,7 +6,7 @@ and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-* Adds support for retrieving crimes within a custom area
+* Adds support for retrieving crimes within a street-level custom area
 * Retries rate-limited API requests using the response's `retry_after` value
 
 ## [8.0.0] - 2026-09-15
