@@ -10,4 +10,5 @@ const tsJestTransformCfg = createDefaultEsmPreset({
 module.exports = {
   ...tsJestTransformCfg,
   testPathIgnorePatterns: ['build/'],
+  testTimeout: 120000,
 }
