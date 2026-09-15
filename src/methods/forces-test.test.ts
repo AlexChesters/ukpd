@@ -1,5 +1,3 @@
-/* eslint-env jest */
-
 import * as chai from 'chai'
 import * as R from 'ramda'
 

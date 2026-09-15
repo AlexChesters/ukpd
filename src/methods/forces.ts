@@ -2,6 +2,10 @@ import fetchData from '../utils/fetch-data'
 import { Endpoint } from '../utils/endpoints'
 import { Force } from '../'
 
-export default async (force?: string): Promise<Force[] | Force> => {
+async function forces(): Promise<Force[]>
+async function forces(force: string): Promise<Force>
+async function forces(force?: string): Promise<Force[] | Force> {
   return fetchData(`${Endpoint.FORCES}${force ? `/${force}` : ''}`)
 }
+
+export default forces
