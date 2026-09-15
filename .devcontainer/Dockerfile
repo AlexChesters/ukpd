@@ -21,5 +21,5 @@ RUN echo "alias ga='git add .'" >> /root/.bashrc
 RUN echo "alias gc='git commit'" >> /root/.bashrc
 
 # install nodejs
-RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
 RUN apt-get install -y nodejs
